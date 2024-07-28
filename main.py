@@ -267,6 +267,7 @@ for row in matrix:
 else:
   print("Loop completed.")
 '''
+'''
 # Star patterns
 n = 5
 print("pattern value of n : ", n)
@@ -313,8 +314,34 @@ for i in range(n):
     print('o' * n)
   else:
     print('o' + ' ' * (n - 2) + 'o')
+'''
 
 # while loops
+
+n = 5
+i = 1
+while i <= n:
+  j = 1
+  while j <= i:
+    print(j, end=' ')
+    j += 1
+  print()
+  i += 1
+
+print("==================")
+
+n = 9
+i = 1
+while i <= n:
+  j = 1
+  while j <= i:
+    print(i, end=' ')
+    j += 1
+  print()
+  i += 1
+
+print("==================")
+
 
 # break and continue
 
