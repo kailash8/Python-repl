@@ -1,4 +1,3 @@
-from _typeshed import Self
 import time
 
 # print("Hello World. \nhello")
@@ -65,11 +64,12 @@ print(f"Rotated array: {rotated_arr}")
 # Python String Methonds
 
 str = 'all string Methods returns new values. They do NOT change the original string.'
-
+'''
 print("\nInput String :", str)
 print("\n")
 print('###############')
 print("\n")
+'''
 #print(str.capitalize())
 #print(str.casefold())
 #p = repr(str.center(20))
@@ -104,7 +104,7 @@ listWords = ("I", "am", "Kailash", "Choudhary")
 
 a = 30
 b = 30
-
+''' 
 if (a > b):
   print("a is greater than b.")
 else:
@@ -125,10 +125,11 @@ if (a > b):
 else:
   pass
 
+'''
 #print(time.strftime("%H:%M:%S"))
 
 #match - case
-
+'''
 value = 10
 match value:
   case 1:
@@ -139,6 +140,8 @@ match value:
     print("its 3")
   case _:
     print("something else...")
+
+'''
 
 
 #basic
@@ -154,11 +157,12 @@ def match_example(value):
       print("Somthing else...")
 
 
+'''
 match_example(1)
 match_example(2)
 match_example(3)
 match_example(4)
-
+'''
 #multiple patterns
 
 
@@ -170,11 +174,12 @@ def match_example_multiple_pattern(value):
       print("Other...")
 
 
+'''
 match_example_multiple_pattern(1)
 match_example_multiple_pattern(2)
 match_example_multiple_pattern(3)
 match_example_multiple_pattern(4)
-
+'''
 #variable bindings
 
 
@@ -186,9 +191,10 @@ def match_example_variable_bindings(value):
       print(f"Got {x}")
 
 
+'''
 match_example_variable_bindings(0)
 match_example_variable_bindings(20)
-
+'''
 #sequence pattern
 
 
@@ -204,10 +210,12 @@ def match_example_sequence_pattern(value):
       print("Some other sequance")
 
 
+'''
 match_example_variable_bindings([])
 match_example_variable_bindings([1])
 match_example_variable_bindings([1, 2])
 match_example_variable_bindings([1, 2, 3])
+'''
 
 
 #dictioanry pattern
@@ -219,14 +227,15 @@ def match_example_dictioanry_pattern(value):
       print(f"Something else : {value}")
 
 
+'''
 match_example_dictioanry_pattern({"key": 1})
 match_example_dictioanry_pattern({"key": "value"})
 match_example_dictioanry_pattern({"key": "value", "key2": "value2"})
 
-print("\n\n\n")
+print("\n\n")
+'''
 
 #class patterns
-
 '''
 class Point:
 
@@ -235,3 +244,78 @@ class Point:
     self.y = y
 '''
 
+#for loop
+'''
+for i in range(5):
+  print(i)
+
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+for number in numbers :
+  print("So the number is : " , number)
+
+for char in str.upper() :
+  print(char)
+
+'''
+'''
+matrix = [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
+for row in matrix:
+  for element in row:
+    print(element, end=" ")
+  print()
+else:
+  print("Loop completed.")
+'''
+# Star patterns
+n = 5
+print("pattern value of n : ", n)
+
+print("\n")
+for i in range(1, n + 1):
+  print(i * "o")
+
+print("\n")
+for i in range(n, 0, -1):
+  print('o' * i)
+
+print("\n")
+for i in range(n):
+  print(' ' * (n - i - 1) + 'o' * (2 * i + 1))
+
+print("\n")
+for i in range(n, 0, -1):
+  #print("iteration : " , i)
+  print(' ' * (n - i) + 'o' * (2 * i - 1))
+
+#Diamond pattern
+print("\n")
+for i in range(5):
+  print(' ' * (n - i - 1) + 'o' * (2 * i + 1))
+for i in range(n - 1, 0, -1):
+  print(' ' * (n - i) + 'o' * (2 * i - 1))
+
+print("\n")
+for i in range(n):
+  print(' ' * (n - 1 - i) + 'o' * (i + 1))
+
+#Hourglass Pattern
+print("\n")
+for i in range(n, 0, -1):
+  print(' ' * (n - i) + 'o' * (2 * i - 1))
+for i in range(1, n):
+  print(' ' * (n - 1 - i) + 'o' * (2 * i + 1))
+
+#Hollow Square Pattern
+print("\n")
+for i in range(n):
+  if i == 0 or i == n - 1:
+    print('o' * n)
+  else:
+    print('o' + ' ' * (n - 2) + 'o')
+
+# while loops
+
+# break and continue
+
+# functions
