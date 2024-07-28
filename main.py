@@ -37,6 +37,7 @@ def rotate_array(arr, k):
   arr = arr[n - k:] + arr[:n - k]
   return arr
 
+
 '''
 arr = [1, 2, 3, 4, 5]
 k = 2
@@ -58,13 +59,14 @@ print(f"Rotated array: {rotated_arr}")
 # for x in p :
 #   print(x)
 
-
 # Python String Methonds
 
 str = 'all string Methods returns new values. They do NOT change the original string.'
 
-print("\nInput String :\n" ,str)
+print("\nInput String :", str)
+print("\n")
 print('###############')
+print("\n")
 #print(str.capitalize())
 #print(str.casefold())
 #p = repr(str.center(20))
@@ -74,6 +76,25 @@ print('###############')
 #print(str.expandtabs(2
 #print(str.find("NOT"))
 #print("I {} here.".format('was'))
-data = {"name" : "kailash", "age" : 90}
+data = {"name": "kailash", "age": 90}
 #print("My name is {} and I am {} years old.".format(data["name"], data["age"]))
-print(str.index("NOT"))
+#print(str.index("NOT"))
+#print(str.isalnum())
+#print(str.islower())
+#print(str.isupper())
+#print(str.isspace())
+arrayWords = ["I", "am", "Kailash", "Choudhary"]
+listWords = ("I", "am", "Kailash", "Choudhary")
+
+#print(" ".join(arrayWords))
+#print(" ".join(listWords))
+#print(str.replace(" ","=="))
+#print(type(str.split()))
+
+#for x in str.split():
+#  print(x)
+
+#print(" Kailash ")
+#print(" Kailash ".strip())
+#print(str.swapcase())
+#print(str.upper())
