@@ -1,3 +1,6 @@
+from _typeshed import Self
+import time
+
 # print("Hello World. \nhello")
 # print(9)
 #
@@ -102,24 +105,133 @@ listWords = ("I", "am", "Kailash", "Choudhary")
 a = 30
 b = 30
 
-if(a > b):
+if (a > b):
   print("a is greater than b.")
 else:
-  if(a == b):
+  if (a == b):
     print("a equal to b")
   else:
     print("b is greater than a.")
 
-if(a > b):
+if (a > b):
   print("a is greater than b.")
 elif a == b:
   print("a equal to b")
 else:
   print("b is greater than a.")
 
-
-if(a > b):
+if (a > b):
   pass
 else:
   pass
+
+#print(time.strftime("%H:%M:%S"))
+
+#match - case
+
+value = 10
+match value:
+  case 1:
+    print("its 1")
+  case 2:
+    print("its 2")
+  case 3:
+    print("its 3")
+  case _:
+    print("something else...")
+
+
+#basic
+def match_example(value):
+  match value:
+    case 1:
+      print("One")
+    case 2:
+      print("Two")
+    case 3:
+      print("Three")
+    case _:
+      print("Somthing else...")
+
+
+match_example(1)
+match_example(2)
+match_example(3)
+match_example(4)
+
+#multiple patterns
+
+
+def match_example_multiple_pattern(value):
+  match value:
+    case 1 | 2 | 3:
+      print(f"its {value}")
+    case _:
+      print("Other...")
+
+
+match_example_multiple_pattern(1)
+match_example_multiple_pattern(2)
+match_example_multiple_pattern(3)
+match_example_multiple_pattern(4)
+
+#variable bindings
+
+
+def match_example_variable_bindings(value):
+  match value:
+    case 0:
+      print("ZERO")
+    case x:
+      print(f"Got {x}")
+
+
+match_example_variable_bindings(0)
+match_example_variable_bindings(20)
+
+#sequence pattern
+
+
+def match_example_sequence_pattern(value):
+  match value:
+    case []:
+      print("Empty list")
+    case [x]:
+      print(f"Single element : {x}")
+    case [x, y]:
+      print(f"Two elements : {x} and {y}")
+    case _:
+      print("Some other sequance")
+
+
+match_example_variable_bindings([])
+match_example_variable_bindings([1])
+match_example_variable_bindings([1, 2])
+match_example_variable_bindings([1, 2, 3])
+
+
+#dictioanry pattern
+def match_example_dictioanry_pattern(value):
+  match value:
+    case {"key": x}:
+      print(f"Found key with value {x}")
+    case _:
+      print(f"Something else : {value}")
+
+
+match_example_dictioanry_pattern({"key": 1})
+match_example_dictioanry_pattern({"key": "value"})
+match_example_dictioanry_pattern({"key": "value", "key2": "value2"})
+
+print("\n\n\n")
+
+#class patterns
+
+'''
+class Point:
+
+  def __init__(self, x, y):
+    self.x = x
+    self.y = y
+'''
 
