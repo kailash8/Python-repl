@@ -98,3 +98,28 @@ listWords = ("I", "am", "Kailash", "Choudhary")
 #print(" Kailash ".strip())
 #print(str.swapcase())
 #print(str.upper())
+
+a = 30
+b = 30
+
+if(a > b):
+  print("a is greater than b.")
+else:
+  if(a == b):
+    print("a equal to b")
+  else:
+    print("b is greater than a.")
+
+if(a > b):
+  print("a is greater than b.")
+elif a == b:
+  print("a equal to b")
+else:
+  print("b is greater than a.")
+
+
+if(a > b):
+  pass
+else:
+  pass
+
