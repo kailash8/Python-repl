@@ -344,7 +344,7 @@ print("==================")
 '''
 
 # break and continue
-
+'''
 print("Break \n")
 for i in range(10):
   if i == 5:
@@ -356,4 +356,91 @@ for i in range(10):
   if i % 2:
     continue
   print(i)
+
+'''
+
 # functions
+
+
+#Simple
+def greet():
+  print("Greets")
+
+
+greet()
+
+
+#Parameters
+def greet(name):
+  print(f"my name is {name}")
+
+
+greet("chin tapak dam dam")
+
+
+def greet(name, age):
+  print(f"my name is {name} and age is {age}")
+
+
+greet("chin tapak dam dam", 90)
+
+
+def add(a, b):
+  return print(a + b)
+
+
+add(20, 30)
+
+# default parameters
+
+
+def greet(name='Human'):
+  print(f"hello {name}!")
+
+
+greet()
+greet("Kailash")
+
+#Function with Docstring
+
+
+def greets(name):
+  """
+  Hello this is docstring.
+  """
+  print(f"hi {name}!")
+
+
+greets("Hello")
+print(greets.__doc__)
+
+#optional arguments
+
+
+def describe_pet(pet_name, animal_type="Dog"):
+  print(f"I have a {animal_type}.")
+  print(f"My {animal_type}'s name is {pet_name}.")
+
+
+describe_pet("Snowy")
+describe_pet("Meow", "Cat")
+
+#Arbitrary Number of Arguments
+
+
+def make_pizza(*toppings):
+  print("\nMaking a pizza with the following toppings:")
+  for index, topping in enumerate(toppings, 1):
+    print(f"Serial number : {index} - {topping}")
+
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+#Arbitrary Number of Keyword Arguments
+
+
+def build_profile(first_name, last_name, **profile_information):
+  profile = {}
+  profile['first_name'] = first_name
+  profile['last_name'] = last_name
