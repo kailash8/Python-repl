@@ -317,7 +317,7 @@ for i in range(n):
 '''
 
 # while loops
-
+'''
 n = 5
 i = 1
 while i <= n:
@@ -341,8 +341,19 @@ while i <= n:
   i += 1
 
 print("==================")
-
+'''
 
 # break and continue
 
+print("Break \n")
+for i in range(10):
+  if i == 5:
+    break
+  print(i)
+
+print("\nContinue  \n")
+for i in range(10):
+  if i % 2:
+    continue
+  print(i)
 # functions
