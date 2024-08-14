@@ -444,3 +444,55 @@ def build_profile(first_name, last_name, **profile_information):
   profile = {}
   profile['first_name'] = first_name
   profile['last_name'] = last_name
+  for key, value in profile_information.items():
+    profile[key] = value
+  return profile
+
+
+print(build_profile("Kailash", "Choudhary", location="India", age=90))
+
+details = {}
+details['name'] = "kc"
+details['age'] = 90
+details['date'] = 'sysdate'
+
+print(details.items())
+
+def complex_operation(x):
+  return (x ** 2 + 10)/2
+
+numbers = [1,2,3,4,5,6,7,8]
+result = list(map(complex_operation, numbers))
+print(result)
+
+
+print((1 ** 2 + 10)/2)
+print((2 ** 2 + 10)/2)
+print((3 ** 2 + 10)/2)
+
+print( 1278 ** 4)
+
+def is_even(x):
+  return x % 2 == 0
+
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(is_even, numbers))
+print(even_numbers)
+
+#zip function
+
+name  = ["alice", "bob", "charlie"]
+scrores = [90, 85, 95]
+
+print(list(zip(name, scrores)))
+
+
+#lambda functions
+
+numbers = [1,2,3,4,5,6,7,8]
+
+squared_numbers = list(map(lambda x : x ** 2, numbers))
+
+print(squared_numbers)
+
+
