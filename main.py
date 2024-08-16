@@ -458,22 +458,25 @@ details['date'] = 'sysdate'
 
 print(details.items())
 
-def complex_operation(x):
-  return (x ** 2 + 10)/2
 
-numbers = [1,2,3,4,5,6,7,8]
+def complex_operation(x):
+  return (x**2 + 10) / 2
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 result = list(map(complex_operation, numbers))
 print(result)
 
+print((1**2 + 10) / 2)
+print((2**2 + 10) / 2)
+print((3**2 + 10) / 2)
 
-print((1 ** 2 + 10)/2)
-print((2 ** 2 + 10)/2)
-print((3 ** 2 + 10)/2)
+print(1278**4)
 
-print( 1278 ** 4)
 
 def is_even(x):
   return x % 2 == 0
+
 
 numbers = [1, 2, 3, 4, 5, 6]
 even_numbers = list(filter(is_even, numbers))
@@ -481,18 +484,36 @@ print(even_numbers)
 
 #zip function
 
-name  = ["alice", "bob", "charlie"]
+name = ["alice", "bob", "charlie"]
 scrores = [90, 85, 95]
 
 print(list(zip(name, scrores)))
 
-
 #lambda functions
 
-numbers = [1,2,3,4,5,6,7,8]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-squared_numbers = list(map(lambda x : x ** 2, numbers))
+squared_numbers = list(map(lambda x: x**2, numbers))
 
 print(squared_numbers)
 
+print(any(x > 3 for x in [12, 12, 121, 21, 21, 1]))
+print(all(x > 3 for x in [12, 12, 121, 21, 21, 12]))
 
+# intro to list
+
+list1 = [1, 3, 2, 4, 5, 6, 2, 410, 1]
+print(list1[2])
+
+list1.append(20)
+
+print(list1)
+
+list1.remove(1)
+print(list1)
+
+list1.pop(-1)
+print(list1)
+
+list1.extend([20, 20, 20])
+print(list1)
